@@ -2,28 +2,70 @@
 
 var game = {
     music: "98_Lost_Mine.mp3",
-    background_image: "intro-bg.jpg",
+    background_image: "kites.jpg",
     levels: {
 
         start: {
-            message: "You come across a dark cave",
+            message: "You see a kite",
             choices: [
                 {
-                    text: "Enter the cave",
-                    nextLevel: "cave",
+                    text: "Chase it",
+                    nextLevel: "desert",
                 },
 
                 {
-                    text: "Keep on moving",
-                    nextLevel: "field",
+                    text: "Walk away",
+                    nextLevel: "lifestyle",
                 },
             ]
         },
 
-        cave: {
+        desert: {
+            background_image: "abandoned-desert.jpg",
+            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            message: "You end up in an unknown desert",
+            choices: [
+                {
+                    text: "You scream for help",
+                    nextLevel: "stranger",
+                },
+                {
+                    text: "You continue following the kite",
+                    nextLevel: "fortune",
+                },
+            ]
+        },
+
+        lifestyle: {
+            message: "Go back to your mundane lifestyle",
+            choices: [
+                {
+                    text: "Start over",
+                    nextLevel: "start",
+                },
+            ]
+        },
+    
+        stranger: {
             background_image: "fire.gif",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You come across a fire monster or something!",
+            message: "A stranger finds you and asks you for a favor in return for helping you",
+            choices: [
+                {
+                    text: "You ignore them and run away",
+                    nextLevel: "punishment",
+                },
+                {
+                    text: "You help them",
+                    nextLevel: "heaven",
+                },
+            ]
+        },
+        
+        punishment: {
+            background_image: "fire.gif",
+            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            message: "You get punished",
             choices: [
                 {
                     text: "Start over",
@@ -31,9 +73,11 @@ var game = {
                 },
             ]
         },
-
-        field: {
-            message: "Some adventurer you are...",
+        
+        heaven: {
+            background_image: "fire.gif",
+            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            message: "You get rewarded and go to heaven",
             choices: [
                 {
                     text: "Start over",
@@ -41,6 +85,17 @@ var game = {
                 },
             ]
         },
-
+        
+        fortune: {
+            background_image: "fire.gif",
+            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            message: "You catch the kite and get a fortune",
+            choices: [
+                {
+                    text: "Start over",
+                    nextLevel: "start",
+                },
+            ]
+        },
     }
 };
