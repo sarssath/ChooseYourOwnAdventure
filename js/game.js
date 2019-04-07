@@ -1,7 +1,7 @@
 // NOTE - You must have a level with the name "start".  This is used as the first level in the game.
 
 var game = {
-    music: "98_Lost_Mine.mp3",
+    music: "Vertigo.mp3",
     background_image: "kites.jpg",
     levels: {
 
@@ -22,7 +22,7 @@ var game = {
 
         desert: {
             background_image: "abandoned-desert.jpg",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            music: "Test Drive.mp3",
             message: "You end up in an unknown desert",
             choices: [
                 {
@@ -37,7 +37,9 @@ var game = {
         },
 
         lifestyle: {
+            background_image: "bored.gif",
             message: "Go back to your mundane lifestyle",
+            music: "My Bad.mp3",
             choices: [
                 {
                     text: "Start over",
@@ -47,8 +49,8 @@ var game = {
         },
     
         stranger: {
-            background_image: "fire.gif",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            background_image: "stranger.jpg",
+            music: "Waves.mp3",
             message: "A stranger finds you and asks you for a favor in return for helping you",
             choices: [
                 {
@@ -63,8 +65,8 @@ var game = {
         },
         
         punishment: {
-            background_image: "fire.gif",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            background_image: "fires.gif",
+            music: "Let Me Down Slowly.mp3",
             message: "You get punished",
             choices: [
                 {
@@ -75,8 +77,8 @@ var game = {
         },
         
         heaven: {
-            background_image: "fire.gif",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            background_image: "heaven.jpg",
+            music: "Home.mp3",
             message: "You get rewarded and go to heaven",
             choices: [
                 {
@@ -87,8 +89,8 @@ var game = {
         },
         
         fortune: {
-            background_image: "fire.gif",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            background_image: "fortune.jpeg",
+            music: "Talk.mp3",
             message: "You catch the kite and get a fortune",
             choices: [
                 {
